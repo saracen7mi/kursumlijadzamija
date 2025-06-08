@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Kursumlija dzamija u Kladnju</title>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        a-scene {
+            width: 90%;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <audio id="audio-bosnian">
+        <source src="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/ttsmaker-file-2025-3-2-15-34-45.mp3?v=1740927082968" type="audio/mpeg">
+    </audio>
+    <audio id="audio-english">
+        <source src="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/ttsmaker-file-2025-3-2-15-40-2.mp3?v=1740928842813" type="audio/mpeg">
+    </audio>
+    <audio id="audio-german">
+        <source src="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/ttsmaker-file-2025-3-2-15-45-48.mp3?v=1740930795085" type="audio/mpeg">
+    </audio>
+    <audio id="audio-italian">
+        <source src="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/ttsmaker-file-2025-3-2-15-48-26.mp3?v=1740931497299" type="audio/mpeg">
+    </audio>
+    <audio id="audio-turkish">
+        <source src="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/ttsmaker-file-2025-3-2-20-38-13.mp3?v=1740944315478" type="audio/mpeg">
+    </audio>
+
+  
+    <a-scene embedded arjs="sourceType: webcam; trackingMethod: best; debugUIEnabled: false;">
+        <a-plane color="#008000" height="3.5" width="6.5" position="0 0.5 -5" opacity="0.9"></a-plane>
+
+       <a-entity 
+            gltf-model="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/tripo_pbr_model_376566a6-4dc0-4ae3-92f0-b1de7f72e913.glb?v=1740944010295" 
+            position="-2 1 -5" 
+            scale="0.5 0.5 0.5" 
+            rotation="0 240 0" 
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+        </a-entity>
+
+      <a-entity 
+    gltf-model="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/tripo_pbr_model_376566a6-4dc0-4ae3-92f0-b1de7f72e913.glb?v=1740944010295" 
+    position="2 1 -5" 
+    scale="0.5 0.5 0.5" 
+    rotation="0 240 0" 
+    animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+</a-entity>
+      
+      
+      
+  
+
+<a-entity id="eng-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+          material="color: red" position="-2.5 2 -4.9"
+          text="value: ENG; color: white; align: center; width: 3;">
+</a-entity>
+
+<a-entity id="deu-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+          material="color: yellow" position="-1 2 -4.9"
+          text="value: DEU; color: black; align: center; width: 3;">
+</a-entity>
+
+<a-entity id="ita-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+          material="color: blue" position="0.5 2 -4.9"
+          text="value: ITA; color: white; align: center; width: 3;">
+</a-entity>
+
+<a-entity id="tur-button" geometry="primitive: plane; height: 0.5; width: 1.5"
+          material="color: brown" position="2 2 -4.9"
+          text="value: TUR; color: white; align: center; width: 3;">
+</a-entity>
+
+
+        <a-entity position="0 0.8 -4.9">
+            <a-text value="Kursumliju dzamiju u Kladnju je podigao Hadzi Bali-beg , o kojem nemamo detaljnijih podataka, osim da je za odrzavanje dzamije ostavio dosta velik imetak. Tokom vremena, imetak je propao, tako da je dzamija ostala bez sredstava za izdrzavanje.
+Dzamija je sagradjena hiljadu petsto cetrdeset pete godine i predstavlja jedinu potkupolnu dzamiju u Kladnju. Zapravo, Kursumlija dzamija u Kladnju je jedina ocuvana podkupolna dzamija iz najstarijeg osmanskog perioda u cijeloj sjeveroistocnoj Bosni.Neposredno uz ulaz u harem dzamije je smještena stara cesma poznata kao Hadzi Djurdjihanumina cesma.Uz dzamiju je i harem u kome se nalazi izvjestan broj nadgrobnih nisana. Jedan od njih predstavlja mezar Djozić Hafiz Salih efendije, sina Osman efendije, koji je bio imam ove dzamije i umro hiljadu osamsto sedamdeset i treće godine. Komisija za ocuvanje nacionalnih spomenika  dvije hiljade i pete godine, proglasila je Kursumlija dzamiju u Kladnju , nacionalnim spomenikom  Bosne i Hercegovine. "
+                    color="#FFFFFF" width="5.5" wrap-count="50" align="center" scale="0.5 0.5 0.5">
+            </a-text>
+        </a-entity>
+
+        <a-entity 
+            gltf-model="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/tripo_pbr_model.glb" 
+            position="-2 1 -5" 
+            scale="0.5 0.5 0.5" 
+            rotation="0 240 0" 
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+        </a-entity>
+
+        <a-entity 
+            gltf-model="https://cdn.glitch.global/c173b8d7-db0d-404b-844b-83a1212916de/tripo_pbr_model.glb" 
+            position="2 1 -5" 
+            scale="0.5 0.5 0.5" 
+            rotation="0 240 0" 
+            animation="property: rotation; to: 0 360 0; loop: true; dur: 5000">
+        </a-entity>
+
+        <a-entity camera look-controls position="0 0 0" fov="85">
+            <a-cursor color="#FF0000" radius="0.05"></a-cursor>
+        </a-entity>
+    </a-scene>
+
+    <script>
+        let bosnianAudio = document.getElementById('audio-bosnian');
+        let englishAudio = document.getElementById('audio-english');
+        let germanAudio = document.getElementById('audio-german');
+        let italianAudio = document.getElementById('audio-italian');
+        let turkishAudio = document.getElementById('audio-turkish');
+
+        function stopAllAudio() {
+            [bosnianAudio, englishAudio, germanAudio, italianAudio, turkishAudio].forEach(audio => {
+                audio.pause();
+                audio.currentTime = 0;
+            });
+        }
+
+        function playAudio(audioElement) {
+            stopAllAudio();
+            audioElement.play();
+        }
+
+        document.getElementById('eng-button').addEventListener('mouseenter', () => playAudio(englishAudio));
+        document.getElementById('deu-button').addEventListener('mouseenter', () => playAudio(germanAudio));
+        document.getElementById('ita-button').addEventListener('mouseenter', () => playAudio(italianAudio));
+        document.getElementById('tur-button').addEventListener('mouseenter', () => playAudio(turkishAudio));
+
+        // window.addEventListener('load', () => {
+        //     bosnianAudio.play().catch(e => console.log("Audio autoplay blokiran: " + e));
+        // });
+      
+      window.addEventListener('load', () => {
+    document.body.addEventListener('click', () => {
+        if (bosnianAudio.paused) {
+            bosnianAudio.play();
+        }
+    }, { once: true }); // Pokreće se samo jednom
+});
+
+    </script>
+</body>
+</html>
